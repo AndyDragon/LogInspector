@@ -11,6 +11,9 @@
 		49061D432C41DCD20075E2CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49061D422C41DCD20075E2CA /* ContentView.swift */; };
 		49061D452C41DCD50075E2CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49061D442C41DCD50075E2CA /* Assets.xcassets */; };
 		49061D482C41DCD50075E2CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49061D472C41DCD50075E2CA /* Preview Assets.xcassets */; };
+		49C54CB92C41E54F005146AC /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C54CB82C41E54F005146AC /* Types.swift */; };
+		49C54CBC2C41EEEA005146AC /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 49C54CBB2C41EEEA005146AC /* SwiftUICharts */; };
+		49C54CBE2C41EF83005146AC /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C54CBD2C41EF83005146AC /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,8 @@
 		49061D442C41DCD50075E2CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49061D472C41DCD50075E2CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		49061D492C41DCD50075E2CA /* LogInspector.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LogInspector.entitlements; sourceTree = "<group>"; };
+		49C54CB82C41E54F005146AC /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		49C54CBD2C41EF83005146AC /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49C54CBC2C41EEEA005146AC /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,9 +60,11 @@
 			children = (
 				49061D402C41DCD20075E2CA /* LogInspectorApp.swift */,
 				49061D422C41DCD20075E2CA /* ContentView.swift */,
+				49C54CB82C41E54F005146AC /* Types.swift */,
 				49061D442C41DCD50075E2CA /* Assets.xcassets */,
 				49061D492C41DCD50075E2CA /* LogInspector.entitlements */,
 				49061D462C41DCD50075E2CA /* Preview Content */,
+				49C54CBD2C41EF83005146AC /* Helpers.swift */,
 			);
 			path = "Log Inspector";
 			sourceTree = "<group>";
@@ -85,6 +93,9 @@
 			dependencies = (
 			);
 			name = "Log Inspector";
+			packageProductDependencies = (
+				49C54CBB2C41EEEA005146AC /* SwiftUICharts */,
+			);
 			productName = "Log Inspector";
 			productReference = 49061D3D2C41DCD20075E2CA /* Log Inspector.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +124,9 @@
 				Base,
 			);
 			mainGroup = 49061D342C41DCD20075E2CA;
+			packageReferences = (
+				49C54CBA2C41EEEA005146AC /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
+			);
 			productRefGroup = 49061D3E2C41DCD20075E2CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +153,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49C54CB92C41E54F005146AC /* Types.swift in Sources */,
 				49061D432C41DCD20075E2CA /* ContentView.swift in Sources */,
 				49061D412C41DCD20075E2CA /* LogInspectorApp.swift in Sources */,
+				49C54CBE2C41EF83005146AC /* Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +359,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		49C54CBA2C41EEEA005146AC /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/willdale/SwiftUICharts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		49C54CBB2C41EEEA005146AC /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 49C54CBA2C41EEEA005146AC /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 49061D352C41DCD20075E2CA /* Project object */;
 }
