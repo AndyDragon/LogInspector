@@ -13,7 +13,7 @@ struct LogFile {
     var log: Log
 }
 
-struct ContentView: View {
+struct StatisticsContentView: View {
     @Environment(\.self) var environment
     @State private var showDirectoryPicker = false
     @State private var location = ""
@@ -302,5 +302,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    StatisticsContentView()
 }

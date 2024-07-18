@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		49061D412C41DCD20075E2CA /* LogInspectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49061D402C41DCD20075E2CA /* LogInspectorApp.swift */; };
-		49061D432C41DCD20075E2CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49061D422C41DCD20075E2CA /* ContentView.swift */; };
+		49061D432C41DCD20075E2CA /* StatisticsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49061D422C41DCD20075E2CA /* StatisticsContentView.swift */; };
 		49061D452C41DCD50075E2CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49061D442C41DCD50075E2CA /* Assets.xcassets */; };
 		49061D482C41DCD50075E2CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49061D472C41DCD50075E2CA /* Preview Assets.xcassets */; };
 		49C54CB92C41E54F005146AC /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C54CB82C41E54F005146AC /* Types.swift */; };
@@ -19,7 +19,7 @@
 /* Begin PBXFileReference section */
 		49061D3D2C41DCD20075E2CA /* Log Inspector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Log Inspector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49061D402C41DCD20075E2CA /* LogInspectorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInspectorApp.swift; sourceTree = "<group>"; };
-		49061D422C41DCD20075E2CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		49061D422C41DCD20075E2CA /* StatisticsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsContentView.swift; sourceTree = "<group>"; };
 		49061D442C41DCD50075E2CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49061D472C41DCD50075E2CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		49061D492C41DCD50075E2CA /* LogInspector.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LogInspector.entitlements; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				49061D402C41DCD20075E2CA /* LogInspectorApp.swift */,
-				49061D422C41DCD20075E2CA /* ContentView.swift */,
+				49061D422C41DCD20075E2CA /* StatisticsContentView.swift */,
 				49C54CB82C41E54F005146AC /* Types.swift */,
 				49061D442C41DCD50075E2CA /* Assets.xcassets */,
 				49061D492C41DCD50075E2CA /* LogInspector.entitlements */,
@@ -154,7 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49C54CB92C41E54F005146AC /* Types.swift in Sources */,
-				49061D432C41DCD20075E2CA /* ContentView.swift in Sources */,
+				49061D432C41DCD20075E2CA /* StatisticsContentView.swift in Sources */,
 				49061D412C41DCD20075E2CA /* LogInspectorApp.swift in Sources */,
 				49C54CBE2C41EF83005146AC /* Helpers.swift in Sources */,
 			);
